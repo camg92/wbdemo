@@ -1,0 +1,39 @@
+{
+    "connections": [
+        {
+            "from": "start",
+            "id": "route1",
+            "to": "step1"
+        },
+        {
+            "from": "step1",
+            "id": "route2",
+            "to": "end"
+        }
+    ],
+    "format": "workbench.process",
+    "steps": [
+        {
+            "id": "end",
+            "label": "End",
+            "operation": "core.end",
+            "x": 480,
+            "y": 8
+        },
+        {
+            "id": "start",
+            "label": "Start",
+            "operation": "core.start",
+            "x": 0,
+            "y": 8
+        },
+        {
+            "id": "step1",
+            "label": "Generate PDF Output",
+            "operation": "output.generatePdf",
+            "x": 200,
+            "y": 0
+        }
+    ],
+    "version": 1
+}

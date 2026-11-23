@@ -1,0 +1,54 @@
+{
+    "connections": [
+        {
+            "from": "start",
+            "id": "route1",
+            "to": "step1"
+        },
+        {
+            "from": "step1",
+            "id": "route6",
+            "to": "end"
+        }
+    ],
+    "format": "workbench.process",
+    "steps": [
+        {
+            "id": "end",
+            "label": "End",
+            "operation": "core.end",
+            "x": 560,
+            "y": -96
+        },
+        {
+            "id": "start",
+            "label": "Start",
+            "operation": "core.start",
+            "x": -104,
+            "y": -104
+        },
+        {
+            "config": {
+                "pdf": {
+                    "variable": "outDoc"
+                },
+                "template": {
+                    "value": "Forms/New Form.xdp"
+                }
+            },
+            "id": "step1",
+            "label": "Generate PDF Output",
+            "operation": "output.generatePdf",
+            "x": 168,
+            "y": -96
+        }
+    ],
+    "variables": [
+        {
+            "name": "outDoc",
+            "output": true,
+            "type": "document"
+        }
+    ],
+    "version": 1
+}

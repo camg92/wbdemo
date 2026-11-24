@@ -36,7 +36,7 @@
                     "variable": "outDoc"
                 },
                 "template": {
-                    "value": "Forms/SimpleSample.xdp"
+                    "variable": "outDoc"
                 }
             },
             "id": "step1",

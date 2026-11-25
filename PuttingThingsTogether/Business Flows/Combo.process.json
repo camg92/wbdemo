@@ -152,7 +152,7 @@
                     "value": "C:\\AEM"
                 },
                 "ifExists": {
-                    "value": "Stop the run"
+                    "value": "Replace"
                 }
             },
             "id": "step6",
